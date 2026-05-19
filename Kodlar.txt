@@ -1,0 +1,75 @@
+namespace MiniEtkinlikYonetimSistemi
+{
+    public partial class frmAnaSayfa : Form
+    {
+        public frmAnaSayfa()
+        {
+            InitializeComponent();
+        }
+
+        private void lblBaslik_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEtkinlikAdi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnekle_Click(object sender, EventArgs e)
+        {
+            dgvEtkinlikler.Rows.Add(
+            txtEtkinlikAdi.Text,
+            dtpTarih.Text,
+            txtYer.Text,
+            numKontenjan.Value
+            );
+            MessageBox.Show("Etkinlik başarıyla eklendi!");
+        }
+
+        private void dgvEtkinlikler_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmAnaSayfa_Load(object sender, EventArgs e)
+        {
+            dgvEtkinlikler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEtkinlikler.MultiSelect = false;
+
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if (dgvEtkinlikler.SelectedRows.Count > 0)
+            {
+                dgvEtkinlikler.Rows.RemoveAt(
+                    dgvEtkinlikler.SelectedRows[0].Index
+                );
+            }
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtEtkinlikAdi.Clear();
+            txtYer.Clear();
+            numKontenjan.Value = 0;
+        }
+    }
+}
