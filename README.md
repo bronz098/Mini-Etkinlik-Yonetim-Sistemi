@@ -21,7 +21,7 @@ Küçük ama geliştirilebilir bir başlangıç projesi oldu 🚀
 * C#
 * Windows Forms
 * .NET
-* Visual Studio 2022
+* Visual Studio 2026
 
 ## 👨‍💻 Geliştirici
 
@@ -49,7 +49,7 @@ It’s a small but expandable beginner project 🚀
 * C#
 * Windows Forms
 * .NET
-* Visual Studio 2022
+* Visual Studio 2026
 
 ## 👨‍💻 Developer
 
